@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#F8F9FA"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My App"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/iv_setting"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/icon_setting"
+        app:tint="#575454"/>
+
+    <TextView
+        android:id="@+id/tv_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Question :-"
+        android:layout_below="@id/tv_title"
+        android:textColor="#6200EE"
+        android:textStyle="bold"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/tv_question_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What stores small key-value data?"
+        android:textColor="#333333"
+        android:layout_below="@id/tv_question"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/et_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type your answer here..."
+        android:textColor="@color/black"
+        android:background="@android:drawable/editbox_background"
+        android:padding="15dp"
+        android:layout_below="@id/tv_question_text"
+        android:textSize="15sp"
+        android:inputType="textPersonName"/>
+
+    <Button
+        android:id="@+id/btn_check_answer"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:text="Check"
+        android:textSize="20sp"
+        android:backgroundTint="#C83D95F0"
+        android:textColor="@color/white"
+        android:layout_below="@id/et_answer"
+        android:textAllCaps="false"/>
+
+</RelativeLayout>
